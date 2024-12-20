@@ -11,12 +11,10 @@ function saveWord() {
 function searchWord() {
     const searchedWord = document.getElementById('searchInput').value.trim();
     const resultContainer = document.getElementById('resultContainer');
-
     if (dictionary.includes(searchedWord)) {
         alert(`The word "${searchedWord}" is in the dictionary.`);
     } else {
         alert(`The word "${searchedWord}" is NOT in the dictionary.`);
     }
-
     document.getElementById('searchInput').value = "";
 }
